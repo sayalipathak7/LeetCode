@@ -10,7 +10,6 @@ class Solution {
             }
             else
             {
-                System.out.println(cnt);
                 cnt++;
                 if(cnt>=max)
                 {
