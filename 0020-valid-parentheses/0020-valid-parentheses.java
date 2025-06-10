@@ -7,24 +7,14 @@ class Solution {
             {
                 st.push(c);
             }
+            else if(!st.isEmpty() && ((c==')' && st.peek()=='(') || (c==']' && st.peek()=='[') || (c=='}' && st.peek()=='{')))
+            {
+              st.pop();
+            }        
             else
             {
-                if(!st.isEmpty())
-                {
-                    if((c==')' && st.peek()=='(') || (c==']' && st.peek()=='[') || (c=='}' && st.peek()=='{'))
-                    {
-                        st.pop();
-                    }
-                    else
-                    {
-                        return false;
-                    }
-
-                }
-                else
-                    return false;
-            }
-            
+                return false;
+            }  
         }
         return st.isEmpty();
         
