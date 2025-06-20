@@ -12,11 +12,9 @@ class Solution {
         if(root==null || root==p || root==q)return root;
         TreeNode l=lowestCommonAncestor(root.left,p,q);
         TreeNode r=lowestCommonAncestor(root.right,p,q);
-        if(l==null && r==null) return null;
-        else if(l!=null && r==null) return l;
-        else if(l==null && r!=null) return r;
-        else
+        if(l==null && r==null)return null;
+        if(l!=null && r==null)return l;
+        if(l==null && r!=null)return r;
         return root;
-     
     }
 }
