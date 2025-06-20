@@ -18,12 +18,11 @@ class Solution {
         List<Integer> res=new ArrayList<>();
         rv(root,0,res);
         return res;
-        
     }
-    public void rv(TreeNode root,int lvl, List<Integer> res)
+    public void rv(TreeNode root,int lvl,List<Integer> res)
     {
         if(root==null)return;
-        if(res.size()==lvl)res.add(root.val);
+        if(lvl==res.size())res.add(root.val);
         rv(root.right,lvl+1,res);
         rv(root.left,lvl+1,res);
     }
