@@ -16,37 +16,15 @@
 class Solution {
     public boolean isValidBST(TreeNode root) {
         if(root==null) return true;
-        if(root.left!=null)
-        {
-            if(root.val<=root.left.val)
-                return false;
-            TreeNode t=findLeftLargest(root.left);
-            if(t.val>=root.val)return false;
-        }
-        if(root.right!=null)
-        {
-            if(root.val>=root.right.val)
-                return false;
-            TreeNode t=findRightSmallest(root.right);
-            if(t.val<=root.val)return false;
-        }
-        return isValidBST(root.left) && isValidBST(root.right); 
+        long left=Long.MIN_VALUE,right=Long.MAX_VALUE;
+        return isValidBST(root,left,right);
         
     }
-    public TreeNode findRightSmallest(TreeNode root)
-    {
-        while(root.left!=null)
-        {
-            root=root.left;
-        }
-        return root;
+    public boolean isValidBST(TreeNode root,long left,long right) {
+        if(root==null) return true;
+        if(root.val<=left || root.val>=right) return false;
+        return isValidBST(root.left,left,root.val) &&  isValidBST(root.right,root.val,right) ;
+
     }
-    public TreeNode findLeftLargest(TreeNode root)
-    {
-        while(root.right!=null)
-        {
-            root=root.right;
-        }
-        return root;
-    }
+   
 }
