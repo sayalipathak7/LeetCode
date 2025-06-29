@@ -16,20 +16,23 @@
 class Solution {
     public TreeNode invertTree(TreeNode root) {
         if(root==null)return root;
-        // from top to bottom
-        // TreeNode temp=root.left;
-        // root.left=root.right;
+        // TreeNode left=invertTree(root.left);
+        // TreeNode right=invertTree(root.right);
+        // TreeNode temp=left;
+        // root.left=right;
         // root.right=temp;
-        // invertTree(root.left);
-        // invertTree(root.right);
         // return root;
 
-        // from bottom to up
-
-        TreeNode temp=invertTree(root.left);
-        root.left=invertTree(root.right);
+        TreeNode left=root.left;
+        TreeNode right=root.right; 
+        TreeNode temp=left;
+        root.left=right;
         root.right=temp;
+        invertTree(root.left);
+        invertTree(root.right);
         return root;
+
+
         
     }
 }
