@@ -15,15 +15,18 @@
  */
 class Solution {
     public int kthSmallest(TreeNode root, int k) {
-        List<Integer> al=new ArrayList<>();
-        kthSmallest(root,al);
-        return al.get(k-1);
+     int[] cnt =new int[1];
+      int[] ans =new int[1];
+        kthSmallest(root,k,cnt,ans);
+        return ans[0];
+       
         
     }
-     public void kthSmallest(TreeNode root, List<Integer>al) {
+     public void kthSmallest(TreeNode root, int k,int[] cnt,int[] ans) {
         if(root==null) return;
-        kthSmallest(root.left,al);
-        al.add(root.val);
-        kthSmallest(root.right,al);
+        kthSmallest(root.left,k,cnt,ans);
+        cnt[0]=cnt[0]+1;
+        if(cnt[0]==k)ans[0]= root.val;
+         kthSmallest(root.right,k,cnt,ans);
      }
 }
