@@ -15,41 +15,42 @@
  */
 class Solution {
     public TreeNode deleteNode(TreeNode root, int key) {
-        if(root==null)return null;
+        if(root==null)return root;
         if(root.val==key)
         {
-            if(root.left==null && root.right==null) return null;
-            else if(root.right==null) return root.left;
-            else if(root.left==null) return root.right;
+            if(root.left==null && root.right==null)return null;
+            else if(root.left==null || root.right==null)
+            {
+                if(root.left==null)return root.right;
+                else return root.left;
+            }
             else
             {
-                TreeNode lmax=findLeftMax(root.left);
-                lmax.right=root.right;
+                TreeNode lm=findLeftMax(root.left);
+                lm.right=root.right;
                 return root.left;
+
             }
 
-
         }
-        else if(root.val<key)
+        else if(key<root.val)
         {
-            root.right=deleteNode(root.right,key);
-
+            root.left=deleteNode(root.left,key);
         }
         else
         {
-            root.left=deleteNode(root.left,key);
-
+             root.right=deleteNode(root.right,key);
         }
         return root;
         
     }
-    public TreeNode findLeftMax(TreeNode t)
+    public  TreeNode findLeftMax(TreeNode root)
     {
-        while(t.right!=null)
+        while(root.right!=null)
         {
-            t=t.right;
+            root=root.right;
         }
-        return t;
+        return root;
 
     }
 }
