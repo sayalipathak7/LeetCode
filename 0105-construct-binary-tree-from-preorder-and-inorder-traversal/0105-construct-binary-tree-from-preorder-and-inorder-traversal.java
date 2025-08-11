@@ -20,21 +20,19 @@ class Solution {
         {
             hm.put(inorder[i],i);
         }
-        return buildTree(preorder,0,preorder.length-1,inorder,0,inorder.length-1,hm);
-        
-        
-    }
-    public TreeNode buildTree(int[] preorder,int ps,int pe, int[] inorder,int is,int ie,HashMap<Integer,Integer> hm) {
-        if(ps>pe || is>ie) return null;
-        TreeNode root=new TreeNode(preorder[ps]);
-        int idx=hm.get(preorder[ps]);
-        int LeftPrelen=idx-is;
-       
-
-        root.left=buildTree(preorder,ps+1,ps+LeftPrelen,inorder,is,idx-1,hm);
-        root.right=buildTree(preorder,ps+LeftPrelen+1,pe,inorder,idx+1,ie,hm);
+        TreeNode root=buildTree(preorder,0,preorder.length-1,inorder,0,inorder.length-1,hm);
         return root;
 
+        
     }
-
+    public TreeNode buildTree(int[] preorder,int ps,int pe, int[] inorder,int is,int ie, HashMap<Integer,Integer> hm)
+    {
+        if(ps>pe || is>ie)return null;
+        int idx=hm.get(preorder[ps]);
+        int pre_left=idx-is;
+        TreeNode root=new TreeNode(preorder[ps]);
+        root.left=buildTree(preorder,ps+1,ps+pre_left,inorder,is,idx-1,hm);
+        root.right=buildTree(preorder,ps+pre_left+1,pe,inorder,idx+1,ie,hm);
+        return root;
+    }
 }
