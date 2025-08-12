@@ -14,52 +14,49 @@ public class Codec {
         if(root==null) return null;
         StringBuilder sb=new StringBuilder();
         Queue<TreeNode> q=new LinkedList<>();
-        q.offer(root);
+        q.add(root);
         while(!q.isEmpty())
         {
             TreeNode r=q.poll();
-            if(r==null)sb.append("#").append(",");
+            if(r==null) sb.append("#").append(",");
             else sb.append(r.val).append(",");
             if(r!=null)
-            q.offer(r.left);
-            if(r!=null)
-            q.offer(r.right);
+            { 
+                q.offer(r.left);
+                q.offer(r.right);
+
+            }
+           
         }
         return sb.toString();
-
         
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
         if(data==null)return null;
-        String[] al= data.split(",");
         Queue<TreeNode> q=new LinkedList<>();
-        int dt=Integer.parseInt(al[0]);
-        TreeNode root=new TreeNode(dt);
+        String [] s=data.split(",");
+        TreeNode root=new TreeNode(Integer.parseInt(s[0]));
         q.offer(root);
         int i=1;
-        
         while(!q.isEmpty())
         {
             TreeNode r=q.poll();
-            if(!al[i].equals("#"))
+            if(!s[i].equals("#"))
             {
-                dt=Integer.parseInt(al[i]);
-                r.left=new TreeNode(dt);
-                q.offer(r.left);
+                r.left=new TreeNode(Integer.parseInt(s[i]));
+                 q.offer(r.left);
             }
-            if(!al[i+1].equals("#"))
+                
+            if(!s[i+1].equals("#"))
             {
-                dt=Integer.parseInt(al[i+1]);
-                r.right=new TreeNode(dt);
+                r.right=new TreeNode(Integer.parseInt(s[i+1]));
                 q.offer(r.right);
             }
             i=i+2;
-
         }
         return root;
-
         
     }
 }
