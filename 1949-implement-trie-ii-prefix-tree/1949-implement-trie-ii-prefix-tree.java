@@ -91,23 +91,20 @@ class Trie {
         Node curr=root;
         for(int i=0;i<word.length();i++)
         {
-             int idx=word.charAt(i)-'a';
-             if(curr.children[idx]==null)return;
-             curr.children[idx].countPref=curr.children[idx].countPref-1;
-                if(i == word.length() - 1) {
-            if(curr.children[idx].eow) {
+            int idx=word.charAt(i)-'a';
+            if(curr.children[idx]==null)return;
+
+            curr.children[idx].countPref=curr.children[idx].countPref-1;
+            if(i == word.length() - 1 && curr.children[idx].eow== true) 
+            {
                 curr.children[idx].contEnd--;
                 if(curr.children[idx].contEnd == 0) curr.children[idx].eow = false;
+                
             }
+        
+            curr = curr.children[idx];
         }
-        
-        curr = curr.children[idx];
-    }
-}
-            
-        
-        
-    
+    }   
 }
 
 /**
