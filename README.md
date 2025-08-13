@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/sayalipathak7/LeetCode/tree/master/0146-lru-cache) |
 | [0208-implement-trie-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0496-next-greater-element-i](https://github.com/sayalipathak7/LeetCode/tree/master/0496-next-greater-element-i) |
+| [1949-implement-trie-ii-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1949-implement-trie-ii-prefix-tree) |
 ## Stack
 |  |
 | ------- |
@@ -41,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0211-design-add-and-search-words-data-structure](https://github.com/sayalipathak7/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0937-online-stock-span](https://github.com/sayalipathak7/LeetCode/tree/master/0937-online-stock-span) |
+| [1949-implement-trie-ii-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1949-implement-trie-ii-prefix-tree) |
 ## Data Stream
 |  |
 | ------- |
@@ -73,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/sayalipathak7/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [1949-implement-trie-ii-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1949-implement-trie-ii-prefix-tree) |
 ## Queue
 |  |
 | ------- |
@@ -200,4 +203,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/sayalipathak7/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
+| [1949-implement-trie-ii-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1949-implement-trie-ii-prefix-tree) |
 <!---LeetCode Topics End-->
