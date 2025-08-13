@@ -76,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/sayalipathak7/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [1838-number-of-distinct-substrings-in-a-string](https://github.com/sayalipathak7/LeetCode/tree/master/1838-number-of-distinct-substrings-in-a-string) |
 | [1949-implement-trie-ii-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1949-implement-trie-ii-prefix-tree) |
 | [2009-longest-word-with-all-prefixes](https://github.com/sayalipathak7/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
 ## Queue
@@ -184,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0572-subtree-of-another-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0572-subtree-of-another-tree) |
+| [1838-number-of-distinct-substrings-in-a-string](https://github.com/sayalipathak7/LeetCode/tree/master/1838-number-of-distinct-substrings-in-a-string) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -206,6 +208,15 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/sayalipathak7/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
+| [1838-number-of-distinct-substrings-in-a-string](https://github.com/sayalipathak7/LeetCode/tree/master/1838-number-of-distinct-substrings-in-a-string) |
 | [1949-implement-trie-ii-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1949-implement-trie-ii-prefix-tree) |
 | [2009-longest-word-with-all-prefixes](https://github.com/sayalipathak7/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
+## Rolling Hash
+|  |
+| ------- |
+| [1838-number-of-distinct-substrings-in-a-string](https://github.com/sayalipathak7/LeetCode/tree/master/1838-number-of-distinct-substrings-in-a-string) |
+## Suffix Array
+|  |
+| ------- |
+| [1838-number-of-distinct-substrings-in-a-string](https://github.com/sayalipathak7/LeetCode/tree/master/1838-number-of-distinct-substrings-in-a-string) |
 <!---LeetCode Topics End-->
