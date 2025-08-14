@@ -4,7 +4,8 @@ class Solution {
         for(int i=0;i<s.length();i++)
         {
             int idx=s.charAt(i)-'a';
-            cnt[idx]=cnt[idx]+1;
+            //cnt[idx]=cnt[idx]+1;
+            cnt[idx]++;
         }
         for(int i=0;i<t.length();i++)
         {
