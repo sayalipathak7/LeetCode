@@ -10,13 +10,13 @@ class Solution {
         for(int a:h)
         {
             cnt=0;
-            if(!h.contains(a+1))
+            if(!h.contains(a-1))
             {
                 int b=a;
                 while(h.contains(b))
                 {
                     cnt++;
-                    b=b-1;
+                    b=b+1;
                 }
             max=Math.max(cnt,max);
 
