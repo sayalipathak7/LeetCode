@@ -1,19 +1,22 @@
 class Node
 {
     Node[] children;
+    int preCounter;
+    int endCounter;
     boolean eow;
-    int countPref;
-    int contEnd;
     Node()
     {
         children=new Node[26];
+        preCounter=0;
+        endCounter=0;
         eow=false;
-        countPref=0;
-        contEnd=0;
+
+
     }
 }
 class Trie {
     Node root=new Node();
+
 
     public Trie() {
         
@@ -28,62 +31,41 @@ class Trie {
             {
                 curr.children[idx]=new Node();
             }
-            curr.children[idx].countPref=curr.children[idx].countPref+1;
-            if(i==word.length()-1)
-            {
+            curr.children[idx].preCounter++;
+            if(i==word.length()-1) { 
                 curr.children[idx].eow=true;
-                curr.children[idx].contEnd=curr.children[idx].contEnd+1;
+                curr.children[idx].endCounter++;
             }
-            curr=curr.children[idx];
-    
-        }
+            curr = curr.children[idx];
 
+
+        }
         
     }
     
     public int countWordsEqualTo(String word) {
-        int count=0;
-        Node curr=root;
-        for(int i=0;i<word.length();i++)
-        {
-             int idx=word.charAt(i)-'a';
-             if(curr.children[idx]==null)
-             {
-                return 0;
-             }
-             if(i==word.length()-1)
-             {
-                if(curr.children[idx].eow!=true) return 0;;
-                count= curr.children[idx].contEnd;
-             }
-             curr=curr.children[idx];
-        }
-
-
-        return count;
         
+         Node curr=root;
+         for(int i=0;i<word.length();i++)
+         {
+            int idx=word.charAt(i)-'a';
+            if(curr.children[idx]==null)return 0;
+            if(i==word.length()-1 && curr.children[idx].eow==true) return curr.children[idx].endCounter;
+            curr = curr.children[idx];
+         }
+         return 0;
     }
     
     public int countWordsStartingWith(String prefix) {
-
-        int count=0;
         Node curr=root;
         for(int i=0;i<prefix.length();i++)
         {
-             int idx=prefix.charAt(i)-'a';
-             if(curr.children[idx]==null)
-             {
-                return 0;
-             }
-             if(i==prefix.length()-1)
-             {
-                count= curr.children[idx].countPref;
-             }
-             curr=curr.children[idx];
+            int idx=prefix.charAt(i)-'a';
+            if(curr.children[idx]==null)return 0;
+            if(i==prefix.length()-1) return curr.children[idx].preCounter;
+            curr = curr.children[idx];
         }
-
-
-        return count;
+        return 0;
         
     }
     
@@ -91,20 +73,15 @@ class Trie {
         Node curr=root;
         for(int i=0;i<word.length();i++)
         {
-            int idx=word.charAt(i)-'a';
-            if(curr.children[idx]==null)return;
+             int idx=word.charAt(i)-'a';
+             if(curr.children[idx]==null)return;
+             curr.children[idx].preCounter --;
+             if(i==word.length()-1 && curr.children[idx].eow==true) curr.children[idx].endCounter--;
 
-            curr.children[idx].countPref=curr.children[idx].countPref-1;
-            if(i == word.length() - 1 && curr.children[idx].eow== true) 
-            {
-                curr.children[idx].contEnd--;
-                if(curr.children[idx].contEnd == 0) curr.children[idx].eow = false;
-                
-            }
-        
-            curr = curr.children[idx];
+             curr = curr.children[idx];
         }
-    }   
+        
+    }
 }
 
 /**
