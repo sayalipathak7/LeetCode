@@ -9,19 +9,26 @@ class Node
     }
 }
 class WordDictionary {
-    Node root=new Node();
 
     public WordDictionary() {
         
     }
+    Node root=new Node();
     
     public void addWord(String word) {
         Node curr=root;
         for(int i=0;i<word.length();i++)
         {
             int idx=word.charAt(i)-'a';
-            if(curr.children[idx]==null) curr.children[idx]=new Node();
-            if(i==word.length()-1) curr.children[idx].eow=true;
+            if(curr.children[idx]==null)
+            {
+                curr.children[idx]=new Node();
+            }
+            if(i==word.length()-1)
+            {
+                curr.children[idx].eow=true;
+            }
+
             curr=curr.children[idx];
         }
         
@@ -29,20 +36,18 @@ class WordDictionary {
     
     public boolean search(String word) {
         Node curr=root;
-        return searchHelper(curr,word,0);   
-        
+        return searchHelper(0,word,curr);
     }
-    public boolean searchHelper(Node curr,String word,int i)
+    public boolean searchHelper(int i,String word,Node curr)
     {
-        if(i==word.length()) return curr.eow;
+        if(i==word.length())return curr.eow;
         if(word.charAt(i)=='.')
         {
-            for(int j=0;j<26;j++)
+            
+            for(int idx=0;idx<26;idx++)
             {
-                if(curr.children[j]!=null)
-                {
-                    if(searchHelper(curr.children[j],word,i+1)==true) return true;
-                }
+                if(curr.children[idx]!=null)
+                if(searchHelper(i+1,word,curr.children[idx]))return true;
             }
             return false;
 
@@ -51,13 +56,11 @@ class WordDictionary {
         {
             int idx=word.charAt(i)-'a';
             if(curr.children[idx]==null)return false;
-            if(i==word.length()-1 && curr.children[idx].eow!=true) return false;
-            return searchHelper(curr.children[idx],word,i+1);
-
+            if(i==word.length()-1 && curr.children[idx].eow==false)return false;
+            return searchHelper(i+1,word,curr.children[idx]);
         }
 
-    }     
-       
+    }
 }
 
 /**
