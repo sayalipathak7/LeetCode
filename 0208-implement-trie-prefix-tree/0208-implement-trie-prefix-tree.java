@@ -1,13 +1,12 @@
 class Node
 {
-    Node [] children;
+    Node[] children;
     boolean eow;
     Node()
     {
         children=new Node[26];
         eow=false;
     }
-
 }
 class Trie {
     Node root=new Node();
@@ -20,11 +19,17 @@ class Trie {
         Node curr=root;
         for(int i=0;i<word.length();i++)
         {
-            int idx_of_char=word.charAt(i)-'a';
-            if(curr.children[idx_of_char]==null)
-                curr.children[idx_of_char] =new Node();
-            if(i==word.length()-1) curr.children[idx_of_char].eow=true;
-            curr=curr.children[idx_of_char];
+            int idx=word.charAt(i)-'a';
+            if(curr.children[idx]==null)
+            {
+                curr.children[idx]=new Node();
+            }
+            if(i==word.length()-1)
+            {
+                curr.children[idx].eow=true;
+            }
+
+            curr=curr.children[idx];
 
         }
         
@@ -34,11 +39,12 @@ class Trie {
         Node curr=root;
         for(int i=0;i<word.length();i++)
         {
-            int idx_of_char=word.charAt(i)-'a';
-            if(curr.children[idx_of_char]==null)
-               return false;
-             if(i==word.length()-1 && curr.children[idx_of_char].eow!=true) return false;
-            curr=curr.children[idx_of_char];
+            int idx=word.charAt(i)-'a';
+            if(curr.children[idx]==null)return false;
+            if(i==word.length()-1 && curr.children[idx].eow==false)return false;
+
+            curr=curr.children[idx];
+
         }
         return true;
         
@@ -48,13 +54,13 @@ class Trie {
         Node curr=root;
         for(int i=0;i<prefix.length();i++)
         {
-            int idx_of_char=prefix.charAt(i)-'a';
-            if(curr.children[idx_of_char]==null)
-               return false;
-            curr=curr.children[idx_of_char];
+            int idx=prefix.charAt(i)-'a';
+            if(curr.children[idx]==null)return false;
+            curr=curr.children[idx];
         }
         return true;
-
+        
+        
     }
 }
 
