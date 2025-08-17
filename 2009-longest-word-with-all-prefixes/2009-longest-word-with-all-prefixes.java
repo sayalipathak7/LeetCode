@@ -9,53 +9,53 @@ class Node
     }
 }
 class Solution {
-
-    Node root=new Node();
+    Node root=new Node();;
     public void insert(String word)
     {
         Node curr=root;
         for(int i=0;i<word.length();i++)
         {
             int idx=word.charAt(i)-'a';
-            if(curr.children[idx]==null)
-                curr.children[idx]=new Node();
-            if(i==word.length()-1) curr.children[idx].eow=true;
+            if(curr.children[idx]==null)curr.children[idx]=new Node();
+            if(i==word.length()-1)curr.children[idx].eow=true;
             curr=curr.children[idx];
-
         }
+
     }
-
     public String longestWord(String[] words) {
-        for(String s:words)
-        {
-            insert(s);
-        }
-        
-        String max_string="";
+        String max="";
         for(String word:words)
         {
+            insert(word);
+        }
+        for(String word:words)
+        {
+            boolean allPrefixes=true;
             Node curr=root;
-            boolean allprefix=true;
             for(int i=0;i<word.length();i++)
             {
                 int idx=word.charAt(i)-'a';
-                if(curr.children[idx].eow!=true)
+                //System.out.println(word+" : " +word.charAt(i) +" : " +curr.children[idx]);
+                if(curr.children[idx].eow==false)
                 {
-                    allprefix=false;
+                    allPrefixes=false;
                     break;
-                } 
-                
-                curr=curr.children[idx];
+
+                }
+                curr= curr.children[idx];
             }
-            if(allprefix)
+            if(allPrefixes)
             {
-                if(word.length()>max_string.length())
-                    max_string= word;
-                if(!word.equals(max_string) && word.length()==max_string.length())
-                    max_string= (word.compareTo(max_string)<0)? word : max_string;
+                if(word.length()>max.length())max=word;
+                else if(word.length()==max.length())
+                {
+                    max=word.compareTo(max)<0? word :max;
+                }
+
             }
+            
         }
-        return max_string;
+        return max;
         
     }
 }
