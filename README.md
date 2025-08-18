@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/sayalipathak7/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0643-maximum-average-subarray-i](https://github.com/sayalipathak7/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [2009-longest-word-with-all-prefixes](https://github.com/sayalipathak7/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
+| [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
 ## Hash Table
 |  |
 | ------- |
@@ -271,4 +272,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/sayalipathak7/LeetCode/tree/master/0036-valid-sudoku) |
+| [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
+## Simulation
+|  |
+| ------- |
+| [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
 <!---LeetCode Topics End-->
