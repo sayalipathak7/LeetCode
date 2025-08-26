@@ -4,22 +4,19 @@ class Solution {
         Arrays.sort(nums);
         for(int i=0;i<nums.length;i++)
         {
-            List<Integer> al=new ArrayList<>();
             int target=nums[i];
-            HashSet<Integer> h=new HashSet<>();
-            for(int j=i+1;j<nums.length;j++)
+            int l=i+1,r=nums.length-1;
+            while(l<r)
             {
-                if(h.contains((target+nums[j])*-1))
+                if(target+nums[l]+nums[r]==0)
                 {
-                    res.add(Arrays.asList(target,nums[j],(target+nums[j])*-1));
-                    
-
+                    res.add(Arrays.asList(target,nums[l],nums[r]));
+                    l++;r--;
                 }
-                else
-                 h.add(nums[j]);
-            }
-           
+                if(nums[l]+nums[r]+target <0) l++;
+                else if(nums[l]+nums[r]+target >0) r--;
 
+            }
         }
         List<List<Integer>> list = new ArrayList<>(res);
         return list;
