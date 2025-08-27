@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/sayalipathak7/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0496-next-greater-element-i](https://github.com/sayalipathak7/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0643-maximum-average-subarray-i](https://github.com/sayalipathak7/LeetCode/tree/master/0643-maximum-average-subarray-i) |
+| [1127-last-stone-weight](https://github.com/sayalipathak7/LeetCode/tree/master/1127-last-stone-weight) |
 | [2009-longest-word-with-all-prefixes](https://github.com/sayalipathak7/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
 ## Hash Table
@@ -118,6 +119,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/sayalipathak7/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0347-top-k-frequent-elements](https://github.com/sayalipathak7/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/sayalipathak7/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1127-last-stone-weight](https://github.com/sayalipathak7/LeetCode/tree/master/1127-last-stone-weight) |
 ## Monotonic Queue
 |  |
 | ------- |
