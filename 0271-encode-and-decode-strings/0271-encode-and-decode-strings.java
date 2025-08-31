@@ -26,7 +26,6 @@ public class Codec {
                 idx++;
             }
             len=Integer.parseInt(s.substring(i,idx));
-            System.out.println(len);
             res.add(s.substring(idx+1,idx+1+len));
             idx=idx+1+len;
 
