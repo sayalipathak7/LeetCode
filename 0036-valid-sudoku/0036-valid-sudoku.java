@@ -1,28 +1,33 @@
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        int len=board.length;
-        HashSet<Character> [] rh=new HashSet[len];
-        HashSet<Character> [] ch=new HashSet[len];
-        HashSet<Character> [] sh=new HashSet[len];
-
-        for(int row=0;row<9;row++)
+        HashSet<Character> [] rows=new HashSet[9];
+        HashSet<Character> [] cols=new HashSet[9];
+        HashSet<Character> [] sq=new HashSet[9];
+        for(int i=0;i<9;i++)
         {
-            for(int col=0;col<9;col++)
+            rows[i]=new HashSet<>();
+            cols[i]=new HashSet<>();
+            sq[i]=new HashSet<>();
+        }
+        for(int i=0;i<board.length;i++)
+        {
+            for(int j=0;j<board[0].length;j++)
             {
-                if(board[row][col]!='.')
-                {
-                    if(rh[row]==null)rh[row]=new HashSet<Character>();
-                    if(!rh[row].add(board[row][col]))return false;
+                char num=board[i][j];
+                if(num=='.')continue;
+                //check row
+                if(rows[i].contains(num)) return false;
+                else rows[i].add(num);
 
-                    if(ch[col]==null)ch[col]=new HashSet<Character>();
-                    if(!ch[col].add(board[row][col]))return false;
+                // check col
+                if(cols[j].contains(num)) return false;
+                else cols[j].add(num);
 
-                    int idx=(row/3)*3+(col/3);
-                    if(sh[idx]==null)sh[idx]=new HashSet<Character>();
-                    if(!sh[idx].add(board[row][col]))return false;
+                //check sq
+                int s=(i/3)*3+(j/3);
+                if(sq[s].contains(num)) return false;
+                else sq[s].add(num);
 
-
-                }
             }
         }
         return true;
