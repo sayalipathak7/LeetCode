@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/sayalipathak7/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/sayalipathak7/LeetCode/tree/master/0049-group-anagrams) |
 | [0074-search-a-2d-matrix](https://github.com/sayalipathak7/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0078-subsets](https://github.com/sayalipathak7/LeetCode/tree/master/0078-subsets) |
 | [0084-largest-rectangle-in-histogram](https://github.com/sayalipathak7/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/sayalipathak7/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0128-longest-consecutive-sequence](https://github.com/sayalipathak7/LeetCode/tree/master/0128-longest-consecutive-sequence) |
@@ -336,4 +337,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1014-k-closest-points-to-origin](https://github.com/sayalipathak7/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+## Backtracking
+|  |
+| ------- |
+| [0078-subsets](https://github.com/sayalipathak7/LeetCode/tree/master/0078-subsets) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0078-subsets](https://github.com/sayalipathak7/LeetCode/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
