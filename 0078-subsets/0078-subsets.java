@@ -1,23 +1,23 @@
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> res=new ArrayList<>();
-        List<Integer> num=new ArrayList<>();
-        subset(0,num,nums,res);
+        List<Integer> op=new ArrayList<>();
+        subsets(0,nums,op,res);
         return res;
 
-        
     }
-    public void subset(int start, List<Integer> num,int[] nums,List<List<Integer>> res)
+    public void subsets(int start,int[] nums, List<Integer> op,List<List<Integer>> res)
     {
-        if(start==nums.length) 
+        if(start==nums.length)
         {
-            res.add(new ArrayList<>(num));
-            return ;
+            res.add(new ArrayList<>(op));
+            return;
         }
-        num.add(nums[start]);
-        subset(start+1,num,nums,res);
-        num.remove(num.size()-1);
-        subset(start+1,num,nums,res);
+        op.add(nums[start]);
+        subsets(start+1,nums,op,res);
+        op.remove(op.size()-1);
+        subsets(start+1,nums,op,res);
+
 
 
     }
