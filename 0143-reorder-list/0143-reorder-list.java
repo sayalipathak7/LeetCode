@@ -11,31 +11,27 @@
 class Solution {
     public void reorderList(ListNode head) {
         if(head==null || head.next==null) return;
-        ListNode slow=head,fast=head,prev=null;;
+        ListNode slow=head,fast=head;
         while(fast!=null && fast.next!=null)
         {
-            prev=slow;
             slow=slow.next;
             fast=fast.next.next;
         }
         ListNode h1=head;
-        prev.next=null;
-        ListNode h2=slow;
-        ListNode newH2=reverse(h2);
-        ListNode dummy=new ListNode(0);
-        ListNode temp=dummy;
-        while(h1!=null && newH2!=null)
+        ListNode newH2=reverse(slow.next);
+        slow.next=null;
+        ListNode temp=null;
+        while(newH2!=null)
         {
-            temp.next=h1;
-            h1=h1.next;
-            temp=temp.next;
-            temp.next=newH2;
-            newH2=newH2.next;
-            temp=temp.next;
-            
-            
+            temp=h1.next;
+            h1.next=newH2;
+            h1=temp;
+
+            temp=newH2.next;
+            newH2.next=h1;
+            newH2=temp;    
         }
-        head=dummy.next; 
+    
     }
     public ListNode reverse(ListNode head)
     {
