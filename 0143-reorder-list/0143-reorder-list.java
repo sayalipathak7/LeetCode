@@ -10,7 +10,7 @@
  */
 class Solution {
     public void reorderList(ListNode head) {
-        if(head==null || head.next==null) return;
+        if(head==null)return;
         ListNode slow=head,fast=head;
         while(fast!=null && fast.next!=null)
         {
@@ -18,25 +18,28 @@ class Solution {
             fast=fast.next.next;
         }
         ListNode h1=head;
-        ListNode newH2=reverse(slow.next);
+        ListNode h2=rev(slow.next);
         slow.next=null;
-        ListNode temp=null;
-        while(newH2!=null)
+        ListNode t=null;
+        while(h2!=null)
         {
-            temp=h1.next;
-            h1.next=newH2;
-            h1=temp;
+            t=h1.next;
+            h1.next=h2;
+            h1=t;
 
-            temp=newH2.next;
-            newH2.next=h1;
-            newH2=temp;    
+            t=h2.next;
+            h2.next=h1;
+            h2=t;
+
         }
-    
+      
+
+        
     }
-    public ListNode reverse(ListNode head)
+    public ListNode rev(ListNode head)
     {
-        if(head==null ||  head.next==null) return head;
-        ListNode prev=head,curr=head.next;
+        if(head==null || head.next==null)return head;
+        ListNode curr=head.next,prev=head;
         while(curr!=null)
         {
             ListNode nn=curr.next;
