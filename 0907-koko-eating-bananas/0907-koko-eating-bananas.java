@@ -3,38 +3,27 @@ class Solution {
         int max=0;
         for(int n:piles)
         {
-            max=Math.max(max,n);
+            max=Math.max(n,max);
         }
         int l=1,r=max,k=0;
         while(l<=r)
         {
             int mid=l+(r-l)/2;
-            int ttlHr=0;
-            for(int p:piles)
+            int ttl=0;
+            for(int a:piles)
             {
-                ttlHr=(int)(ttlHr+Math.ceil((double)p/mid));
+                ttl=(int)(ttl+Math.ceil((double)a/mid));
             }
-            if(ttlHr>h)
+            if(ttl>h)
             {
                 l=mid+1;
             }
-            else if(ttlHr<=h)
+            else if(ttl<=h)
             {
                 k=mid;
                 r=mid-1;
-            } 
-            
+            }
         }
-        // for(int k=1;k<=max;k++)
-        // {
-        //     int ttlHr=0;
-        //     for(int p:piles)
-        //     {
-        //         ttlHr=(int)(ttlHr+Math.ceil((double)p/k));
-        //     }
-        //     if(ttlHr<=h) return k;
-        // }
-
         return k;
         
     }
