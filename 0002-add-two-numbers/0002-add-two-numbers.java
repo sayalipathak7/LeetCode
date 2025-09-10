@@ -15,12 +15,16 @@ class Solution {
         int nodeVal=0,rem=0,sum=0;
         ListNode nHead=null,ncurr=null,prev=null;;
 
-        while(curr1!=null || curr2!=null)
+        while(curr1!=null || curr2!=null || rem!=0)
         {
-            if(curr1==null)  sum=rem+curr2.val;
-            else if(curr2==null) sum=rem+curr1.val;
-            else
-            sum=rem+curr1.val+curr2.val;
+            int c1=0;
+            int c2=0;
+            if(curr1==null) c1=0;
+            else  c1=curr1.val;
+
+            if(curr2==null) c2=0;
+            else  c2=curr2.val;
+            sum=rem+c1+c2;
            
             nodeVal=sum%10;
             rem=sum/10;
@@ -39,11 +43,6 @@ class Solution {
                 curr1=curr1.next;
             if(curr2!=null)
                 curr2=curr2.next;
-        }
-        if(rem!=0)
-        {
-            ncurr=new ListNode(rem);
-            prev.next=ncurr; 
         }
         return nHead;
         
