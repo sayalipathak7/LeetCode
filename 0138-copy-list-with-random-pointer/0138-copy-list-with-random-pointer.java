@@ -35,8 +35,6 @@ class Solution {
             }
                 
             hm.put(curr,ncurr);
-            
-            ncurr=ncurr.next;
             curr=curr.next;
         }
        // System.out.println(hm.toString());
