@@ -1,85 +1,83 @@
 class Node
 {
-    int key;
     int val;
+    int key;
     Node next;
     Node prev;
     Node(int k,int v)
     {
         key=k;
         val=v;
-        next=null;
-        prev=null;
     }
+
 }
 class LRUCache {
+    Node head;
+    Node tail;
+    int cap;
     HashMap<Integer,Node> hm=new HashMap<>();
-    Node head=new Node(0,0);
-    Node tail=new Node(0,0);
-   
-
-    int cap=0;
 
     public LRUCache(int capacity) {
-        cap=capacity;
-         head.next=tail;
+        head=new Node(0,0);
+        tail=new Node(0,0);
+        head.next=tail;
         tail.prev=head;
-
+        cap=capacity;   
     }
-
     public void add(Node n)
     {
-        Node nxt=head.next;
+        Node nn=head.next;
+        n.next=nn;
+        nn.prev=n;
         head.next=n;
         n.prev=head;
-        n.next=nxt;
-        nxt.prev=n;
-        
 
     }
     public void delete(Node n)
     {
         Node p=n.prev;
-        p.next=n.next;
-        n.next.prev=p;
-        
+        Node nn=n.next;
+        p.next=nn;
+        nn.prev=p;
+
     }
     
     public int get(int key) {
         if(hm.containsKey(key))
         {
             Node n=hm.get(key);
+            int val=n.val;
             delete(n);
             add(n);
-            return n.val;
+            return val;
+
         }
         else
-            return -1;   
+            return -1;
         
     }
     
     public void put(int key, int value) {
-         if(hm.containsKey(key))
-         {
+        if(hm.containsKey(key))
+        {
             Node n=hm.get(key);
             n.val=value;
             delete(n);
             add(n);
-         }
-         else
-         {
+
+        }
+        else
+        {
+            Node n=new Node(key,value);
             if(hm.size()>=cap)
             {
                 hm.remove(tail.prev.key);
                 delete(tail.prev);
                 
             }
-            Node n= new Node(key,value);
             add(n);
             hm.put(key,n);
-
-         }
-       
+        }
         
     }
 }
