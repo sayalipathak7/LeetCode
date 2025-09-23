@@ -55,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/sayalipathak7/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0496-next-greater-element-i](https://github.com/sayalipathak7/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0621-task-scheduler](https://github.com/sayalipathak7/LeetCode/tree/master/0621-task-scheduler) |
+| [1023-time-based-key-value-store](https://github.com/sayalipathak7/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1949-implement-trie-ii-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1949-implement-trie-ii-prefix-tree) |
 ## Stack
 |  |
@@ -84,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/sayalipathak7/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0937-online-stock-span](https://github.com/sayalipathak7/LeetCode/tree/master/0937-online-stock-span) |
+| [1023-time-based-key-value-store](https://github.com/sayalipathak7/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1949-implement-trie-ii-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1949-implement-trie-ii-prefix-tree) |
 ## Data Stream
 |  |
@@ -135,6 +137,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/sayalipathak7/LeetCode/tree/master/0242-valid-anagram) |
 | [0271-encode-and-decode-strings](https://github.com/sayalipathak7/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [1023-time-based-key-value-store](https://github.com/sayalipathak7/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1838-number-of-distinct-substrings-in-a-string](https://github.com/sayalipathak7/LeetCode/tree/master/1838-number-of-distinct-substrings-in-a-string) |
 | [1949-implement-trie-ii-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1949-implement-trie-ii-prefix-tree) |
 | [2009-longest-word-with-all-prefixes](https://github.com/sayalipathak7/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
@@ -279,6 +282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0789-kth-largest-element-in-a-stream](https://github.com/sayalipathak7/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0792-binary-search](https://github.com/sayalipathak7/LeetCode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/sayalipathak7/LeetCode/tree/master/0907-koko-eating-bananas) |
+| [1023-time-based-key-value-store](https://github.com/sayalipathak7/LeetCode/tree/master/1023-time-based-key-value-store) |
 ## Dynamic Programming
 |  |
 | ------- |
