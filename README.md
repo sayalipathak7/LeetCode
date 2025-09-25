@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0907-koko-eating-bananas](https://github.com/sayalipathak7/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1014-k-closest-points-to-origin](https://github.com/sayalipathak7/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1127-last-stone-weight](https://github.com/sayalipathak7/LeetCode/tree/master/1127-last-stone-weight) |
+| [1878-check-if-array-is-sorted-and-rotated](https://github.com/sayalipathak7/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [2009-longest-word-with-all-prefixes](https://github.com/sayalipathak7/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
 ## Hash Table
