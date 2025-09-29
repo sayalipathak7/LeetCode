@@ -15,11 +15,16 @@ class Solution {
             res.add(new ArrayList<Integer>(op));
             return;
         }
+        HashSet<Integer> h=new HashSet<>();
         for(int i=idx;i<nums.length;i++)
         {
-            swap(op,i,idx);
-            permute(idx+1,nums,op,res);
-            swap(op,idx,i);
+            if(!h.contains(nums[i]))
+            {
+                h.add(nums[i]);
+                swap(op,i,idx);
+                permute(idx+1,nums,op,res);
+                swap(op,idx,i);
+            }
         }
 
     }
