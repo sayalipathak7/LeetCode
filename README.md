@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/sayalipathak7/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/sayalipathak7/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0271-encode-and-decode-strings](https://github.com/sayalipathak7/LeetCode/tree/master/0271-encode-and-decode-strings) |
+| [0286-walls-and-gates](https://github.com/sayalipathak7/LeetCode/tree/master/0286-walls-and-gates) |
 | [0287-find-the-duplicate-number](https://github.com/sayalipathak7/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/sayalipathak7/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0496-next-greater-element-i](https://github.com/sayalipathak7/LeetCode/tree/master/0496-next-greater-element-i) |
@@ -206,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0199-binary-tree-right-side-view](https://github.com/sayalipathak7/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/sayalipathak7/LeetCode/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0226-invert-binary-tree) |
+| [0286-walls-and-gates](https://github.com/sayalipathak7/LeetCode/tree/master/0286-walls-and-gates) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0733-flood-fill](https://github.com/sayalipathak7/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/sayalipathak7/LeetCode/tree/master/1036-rotting-oranges) |
@@ -364,6 +366,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/sayalipathak7/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/sayalipathak7/LeetCode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/sayalipathak7/LeetCode/tree/master/0200-number-of-islands) |
+| [0286-walls-and-gates](https://github.com/sayalipathak7/LeetCode/tree/master/0286-walls-and-gates) |
 | [0733-flood-fill](https://github.com/sayalipathak7/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/sayalipathak7/LeetCode/tree/master/1036-rotting-oranges) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
