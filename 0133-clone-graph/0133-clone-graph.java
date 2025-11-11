@@ -23,35 +23,33 @@ class Solution {
         if(node==null) return null;
        
         Queue<Node>q=new LinkedList<>();
-        HashMap<Integer,Node> hm=new HashMap<>();
-        int val=node.val;
-        //List<Node> al=node.neighbors;
+        HashMap<Node,Node> hm=new HashMap<>();
         q.offer(node);
         while(!q.isEmpty())
         {
             Node oldNode=q.poll();
             
-            if(!hm.containsKey(oldNode.val))
+            if(!hm.containsKey(oldNode))
             {
                 Node newNode=new Node(oldNode.val);
-                hm.put(oldNode.val,newNode);
+                hm.put(oldNode,newNode);
             }
             List<Node> oldNb=oldNode.neighbors;
             for(Node nb:oldNb)
             {
                 
-                if(!hm.containsKey(nb.val))
+                if(!hm.containsKey(nb))
                 {
                     q.offer(nb);
                     Node newNodenb=new Node(nb.val);
-                    hm.put(nb.val,newNodenb);
+                    hm.put(nb,newNodenb);
 
                 }
-                hm.get(oldNode.val).neighbors.add(hm.get(nb.val));
+                hm.get(oldNode).neighbors.add(hm.get(nb));
 
             }
         }
-        return hm.get(node.val);
+        return hm.get(node);
         
     }
 }
