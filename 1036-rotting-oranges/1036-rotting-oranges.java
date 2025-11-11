@@ -4,7 +4,7 @@ class Solution {
         int nc=grid[0].length;
         Queue<int[]>q=new LinkedList<>();
         int time=0;
-        boolean[][] visited=new boolean[nr][nc];
+        
         int[][]t={{0,1},{0,-1},{1,0},{-1,0}};
         for(int i=0;i<nr;i++)
         {
@@ -13,7 +13,7 @@ class Solution {
                 if(grid[i][j]==2)
                 {
                     q.offer(new int[]{i,j,time});
-                    visited[i][j]=true;
+                    
                 }
             }
         }
@@ -26,9 +26,9 @@ class Solution {
             {
                 int r=row+t[i][0];
                 int c=col+t[i][1];
-                if(r>=0 && r<nr && c>=0 && c<nc && !visited[r][c] && grid[r][c]==1)
+                if(r>=0 && r<nr && c>=0 && c<nc && grid[r][c]==1)
                 {
-                    visited[r][c]=true;
+                   
                     grid[r][c]=2;
                     q.offer(new int[]{r,c,time+1});
 
