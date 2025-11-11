@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0792-binary-search](https://github.com/sayalipathak7/LeetCode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/sayalipathak7/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1014-k-closest-points-to-origin](https://github.com/sayalipathak7/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1036-rotting-oranges](https://github.com/sayalipathak7/LeetCode/tree/master/1036-rotting-oranges) |
 | [1127-last-stone-weight](https://github.com/sayalipathak7/LeetCode/tree/master/1127-last-stone-weight) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/sayalipathak7/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [2009-longest-word-with-all-prefixes](https://github.com/sayalipathak7/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
@@ -207,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0733-flood-fill](https://github.com/sayalipathak7/LeetCode/tree/master/0733-flood-fill) |
+| [1036-rotting-oranges](https://github.com/sayalipathak7/LeetCode/tree/master/1036-rotting-oranges) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
@@ -363,6 +365,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/sayalipathak7/LeetCode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/sayalipathak7/LeetCode/tree/master/0200-number-of-islands) |
 | [0733-flood-fill](https://github.com/sayalipathak7/LeetCode/tree/master/0733-flood-fill) |
+| [1036-rotting-oranges](https://github.com/sayalipathak7/LeetCode/tree/master/1036-rotting-oranges) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
 ## Simulation
 |  |
