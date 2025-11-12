@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1014-k-closest-points-to-origin](https://github.com/sayalipathak7/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1036-rotting-oranges](https://github.com/sayalipathak7/LeetCode/tree/master/1036-rotting-oranges) |
 | [1127-last-stone-weight](https://github.com/sayalipathak7/LeetCode/tree/master/1127-last-stone-weight) |
+| [1436-get-watched-videos-by-your-friends](https://github.com/sayalipathak7/LeetCode/tree/master/1436-get-watched-videos-by-your-friends) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/sayalipathak7/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [2009-longest-word-with-all-prefixes](https://github.com/sayalipathak7/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
@@ -65,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/sayalipathak7/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0621-task-scheduler](https://github.com/sayalipathak7/LeetCode/tree/master/0621-task-scheduler) |
 | [1023-time-based-key-value-store](https://github.com/sayalipathak7/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [1436-get-watched-videos-by-your-friends](https://github.com/sayalipathak7/LeetCode/tree/master/1436-get-watched-videos-by-your-friends) |
 | [1949-implement-trie-ii-prefix-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1949-implement-trie-ii-prefix-tree) |
 ## Stack
 |  |
@@ -213,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0733-flood-fill](https://github.com/sayalipathak7/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/sayalipathak7/LeetCode/tree/master/1036-rotting-oranges) |
+| [1436-get-watched-videos-by-your-friends](https://github.com/sayalipathak7/LeetCode/tree/master/1436-get-watched-videos-by-your-friends) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
@@ -338,6 +341,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/sayalipathak7/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/sayalipathak7/LeetCode/tree/master/0621-task-scheduler) |
 | [1014-k-closest-points-to-origin](https://github.com/sayalipathak7/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1436-get-watched-videos-by-your-friends](https://github.com/sayalipathak7/LeetCode/tree/master/1436-get-watched-videos-by-your-friends) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -425,4 +429,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0133-clone-graph](https://github.com/sayalipathak7/LeetCode/tree/master/0133-clone-graph) |
+| [1436-get-watched-videos-by-your-friends](https://github.com/sayalipathak7/LeetCode/tree/master/1436-get-watched-videos-by-your-friends) |
 <!---LeetCode Topics End-->
