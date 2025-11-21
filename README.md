@@ -213,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0286-walls-and-gates](https://github.com/sayalipathak7/LeetCode/tree/master/0286-walls-and-gates) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0547-number-of-provinces](https://github.com/sayalipathak7/LeetCode/tree/master/0547-number-of-provinces) |
 | [0733-flood-fill](https://github.com/sayalipathak7/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/sayalipathak7/LeetCode/tree/master/1036-rotting-oranges) |
 | [1436-get-watched-videos-by-your-friends](https://github.com/sayalipathak7/LeetCode/tree/master/1436-get-watched-videos-by-your-friends) |
@@ -267,6 +268,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0543-diameter-of-binary-tree) |
+| [0547-number-of-provinces](https://github.com/sayalipathak7/LeetCode/tree/master/0547-number-of-provinces) |
 | [0572-subtree-of-another-tree](https://github.com/sayalipathak7/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0733-flood-fill](https://github.com/sayalipathak7/LeetCode/tree/master/0733-flood-fill) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/sayalipathak7/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
@@ -362,6 +364,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/sayalipathak7/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/sayalipathak7/LeetCode/tree/master/0200-number-of-islands) |
+| [0547-number-of-provinces](https://github.com/sayalipathak7/LeetCode/tree/master/0547-number-of-provinces) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -429,5 +432,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0133-clone-graph](https://github.com/sayalipathak7/LeetCode/tree/master/0133-clone-graph) |
+| [0547-number-of-provinces](https://github.com/sayalipathak7/LeetCode/tree/master/0547-number-of-provinces) |
 | [1436-get-watched-videos-by-your-friends](https://github.com/sayalipathak7/LeetCode/tree/master/1436-get-watched-videos-by-your-friends) |
 <!---LeetCode Topics End-->
