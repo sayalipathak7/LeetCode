@@ -8,32 +8,38 @@ class Solution {
             int v=prerequisites[i][0];
             adj.get(u).add(v);
         }
-       int cnt=0;
-        int[] id=new int[numCourses];
-        Queue<Integer> q=new LinkedList<>();
-        for(int i=0;i<numCourses;i++)
+        boolean[] v=new boolean[numCourses];
+        boolean[] pv=new boolean[numCourses];
+        for(int i=0;i<numCourses;i++) 
         {
-           for(int n :adj.get(i)) 
-           id[n]++;
-        }
-        for(int i=0;i<numCourses;i++)
-        {
-            if(id[i]==0)
-            q.offer(i);
-        }
-        while(!q.isEmpty())
-        {
-            int n=q.poll();
-            cnt++;
-            for(int i:adj.get(n))
+            if(!v[i])
             {
-                id[i]--;
-                if(id[i]==0)
-                q.offer(i);
+               
+                v[i]=true;
+                pv[i]=true;
+                if(dfs(i,v,pv,adj)) return false;
+          
             }
+            
         }
-        if(cnt==numCourses)return true;
-        return false;
         
+        return true;
+        
+    }
+    public boolean dfs(int i,boolean[] v,boolean[] pv,ArrayList<ArrayList<Integer>> adj)
+    {
+        for(int n:adj.get(i))
+        {
+            if(v[n] && pv[n]) return true;
+            if(!v[n])
+            {
+                v[n]=true;
+                pv[n]=true;
+                if(dfs(n,v,pv,adj))return true;
+            }
+            
+        }
+        pv[i]=false;
+        return false;
     }
 }
