@@ -8,8 +8,7 @@ class Solution {
             int v=prerequisites[i][0];
             adj.get(u).add(v);
         }
-
-        ArrayList<Integer> res=new ArrayList<>();
+       int cnt=0;
         int[] id=new int[numCourses];
         Queue<Integer> q=new LinkedList<>();
         for(int i=0;i<numCourses;i++)
@@ -25,17 +24,15 @@ class Solution {
         while(!q.isEmpty())
         {
             int n=q.poll();
-            res.add(n);
+            cnt++;
             for(int i:adj.get(n))
             {
-           
-                 id[i]--;
+                id[i]--;
                 if(id[i]==0)
                 q.offer(i);
             }
         }
-        
-        if(res.size()==numCourses)return true;
+        if(cnt==numCourses)return true;
         return false;
         
     }
