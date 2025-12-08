@@ -321,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/sayalipathak7/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0070-climbing-stairs](https://github.com/sayalipathak7/LeetCode/tree/master/0070-climbing-stairs) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/sayalipathak7/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0131-palindrome-partitioning](https://github.com/sayalipathak7/LeetCode/tree/master/0131-palindrome-partitioning) |
 ## Trie
@@ -413,6 +414,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/sayalipathak7/LeetCode/tree/master/0002-add-two-numbers) |
+| [0070-climbing-stairs](https://github.com/sayalipathak7/LeetCode/tree/master/0070-climbing-stairs) |
 | [1014-k-closest-points-to-origin](https://github.com/sayalipathak7/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 ## Geometry
 |  |
@@ -448,4 +450,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/sayalipathak7/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/sayalipathak7/LeetCode/tree/master/0210-course-schedule-ii) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/sayalipathak7/LeetCode/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
