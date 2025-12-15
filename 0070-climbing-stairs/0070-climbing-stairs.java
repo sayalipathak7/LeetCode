@@ -26,15 +26,37 @@ class Solution {
     //     return res[n-1];
 
     //   }
+
+    //==================================================================================================================================================
+    
+
+    // botton up tabulation tc -n  sc- n
+    // public int climbStairs(int n) {
+    //     if(n==1 || n==2) return n;
+    //     int [] res=new int[n];
+    //     res[0]=1;
+    //     res[1]=2;
+    //     for(int i=3;i<=n;i++)
+    //     {
+    //         res[i-1]=res[i-2]+res[i-3];
+    //     }
+    //     return res[n-1];
+    //    }
+
+       //==================================================================================================================================================
+    
+
+    // botton up tabulation tc -n  sc- 1
     public int climbStairs(int n) {
         if(n==1 || n==2) return n;
-        int [] res=new int[n];
-        res[0]=1;
-        res[1]=2;
+        int p=2,pp=1,res=0;
         for(int i=3;i<=n;i++)
         {
-            res[i-1]=res[i-2]+res[i-3];
+            res=p+pp;
+            pp=p;
+            p=res;
+
         }
-        return res[n-1];
+        return res;
        }
 }
