@@ -20,7 +20,7 @@ class Solution {
         // }
         // return res;
 //=============================================================================================================================
-        // top down memoizaion
+        // top down memoizaion tc- n sc n
         HashMap<Integer,Integer> min=new HashMap<>();
         return minCostClimbingStairs(cost.length,min,cost);
         
