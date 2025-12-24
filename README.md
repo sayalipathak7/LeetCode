@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/sayalipathak7/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0268-missing-number](https://github.com/sayalipathak7/LeetCode/tree/master/0268-missing-number) |
 | [0271-encode-and-decode-strings](https://github.com/sayalipathak7/LeetCode/tree/master/0271-encode-and-decode-strings) |
+| [0283-move-zeroes](https://github.com/sayalipathak7/LeetCode/tree/master/0283-move-zeroes) |
 | [0286-walls-and-gates](https://github.com/sayalipathak7/LeetCode/tree/master/0286-walls-and-gates) |
 | [0287-find-the-duplicate-number](https://github.com/sayalipathak7/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/sayalipathak7/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -415,6 +416,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0142-linked-list-cycle-ii](https://github.com/sayalipathak7/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/sayalipathak7/LeetCode/tree/master/0143-reorder-list) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/sayalipathak7/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0283-move-zeroes](https://github.com/sayalipathak7/LeetCode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/sayalipathak7/LeetCode/tree/master/0287-find-the-duplicate-number) |
 ## Greedy
 |  |
