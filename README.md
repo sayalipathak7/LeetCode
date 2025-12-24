@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1436-get-watched-videos-by-your-friends](https://github.com/sayalipathak7/LeetCode/tree/master/1436-get-watched-videos-by-your-friends) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/sayalipathak7/LeetCode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [2009-longest-word-with-all-prefixes](https://github.com/sayalipathak7/LeetCode/tree/master/2009-longest-word-with-all-prefixes) |
+| [2022-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
 ## Hash Table
 |  |
@@ -399,10 +400,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0286-walls-and-gates](https://github.com/sayalipathak7/LeetCode/tree/master/0286-walls-and-gates) |
 | [0733-flood-fill](https://github.com/sayalipathak7/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/sayalipathak7/LeetCode/tree/master/1036-rotting-oranges) |
+| [2022-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
 ## Simulation
 |  |
 | ------- |
+| [2022-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/sayalipathak7/LeetCode/tree/master/2132-convert-1d-array-into-2d-array) |
 ## Two Pointers
 |  |
